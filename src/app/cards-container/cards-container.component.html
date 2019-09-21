@@ -1,0 +1,10 @@
+<div class="game-fill">
+  <mat-grid-list cols="4" rowHeight="2:2">
+    <div *ngFor="let card of cards; ">
+      <mat-grid-tile>
+        <app-flip-card [card]="card" (cardFlip)="cardEvent($event)"></app-flip-card>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+</div>
+
